@@ -12,8 +12,6 @@ A comprehensive Retrieval Augmented Generation (RAG) application built with Next
 
 ![RAG-APP](./rag.png)
 
-#### 🎥 **YouTube Video:** [Click here](https://www.youtube.com/watch?v=2CrcchGCpcw)
-
 ## 🔐 Security & Privacy
 
 ⚡ **Important Note:**
@@ -51,67 +49,6 @@ A comprehensive Retrieval Augmented Generation (RAG) application built with Next
   - Docker (for local Qdrant instance)
   - Qdrant Cloud account (managed service)
 
-## Installation
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/BCAPATHSHALA/RAGApplication.git
-cd RAGApplication
-```
-
-2. **Install dependencies**
-
-```bash
-pnpm install
-```
-
-3. **Choose your vector database setup:**
-
-### Option A: Local Docker Setup (Recommended for Development)
-
-3a. **Start Qdrant vector database**
-
-```bash
-docker-compose up -d
-```
-
-This will start Qdrant on `http://localhost:6333`
-
-3b. **Set up environment variables**
-Create a `.env.local` file in the root directory:
-
-```env
-QDRANT_URL=http://localhost:6333
-OPENAI_API_KEY=your_openai_api_key_here
-```
-
-### Option B: Qdrant Cloud Setup (Recommended for Production)
-
-3a. **Create a Qdrant Cloud account**
-
-- Visit [https://cloud.qdrant.io/](https://cloud.qdrant.io/)
-- Sign up for a free account
-- Create a new cluster
-- Get your cluster URL and API key
-
-3b. **Set up environment variables**
-Create a `.env.local` file in the root directory:
-
-```env
-QDRANT_URL=https://your-cluster-url.qdrant.io
-QDRANT_API_KEY=your_qdrant_api_key
-OPENAI_API_KEY=your_openai_api_key_here
-```
-
-4. **Run the development server**
-
-```bash
-pnpm run dev
-```
-
-5. **Open your browser**
-   Navigate to `http://localhost:3000`
 
 ## Configuration
 
@@ -312,8 +249,3 @@ For issues and questions:
 - Check the troubleshooting section
 - Review the API documentation
 - Visit [Qdrant Cloud Documentation](https://qdrant.tech/documentation/)
-
-## Social Links
-
-- [LinkedIn](https://linkedin.com/in/manojofficialmj)
-- [Twitter](https://twitter.com/manojofficialmj)
